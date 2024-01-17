@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | THRIFTCART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color:pink;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .form-gap {
+            margin-top: 20px;
+        }
+
+        .panel-default {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-body {
+            padding: 20px;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group-addon {
+            background-color: #428bca;
+            border: none;
+        }
+
+        .input-group-addon i {
+            color:pink;
+        }
+
+        .btn-primary {
+            background-color:pink;
+            border: none;
+        }
+
+        .footer {
+            background-color:pink;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .footer-col-2 img {
+            max-width: 100%;
+        }
+
+        .footer-col-3 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col-3 li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col-4 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col-4 a {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border-top: 1px solid #ccc;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="form-gap"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h3><i class="fa fa-lock fa-4x"></i></h3>
+                            <h2 class="text-center">Forgot Password?</h2>
+                            <p>You can reset your password here.</p>
+                            <div class="panel-body">
+                                <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i
+                                                    class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                            <input id="email" name="email" placeholder="Email Address"
+                                                class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="recover-submit" class="btn btn-lg btn-primary btn-block"
+                                            value="Reset Password" type="submit">
+                                    </div>
+                                    <input type="hidden" class="hide" name="token" id="token" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href="https://www.coupondunia.in/">Coupons</a><br>
+                        <a href="https://www.blogger.com/blog/posts/979777167847731066?bpli=1&pli=1">Blog Post</a><br>
+                        <a href="https://blog.hubspot.com/marketing/best-affiliate-programs">Join Affilliate</a><br>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/">Facebook</a><br>
+                        <a href="https://twitter.com/home?lang=en">twitter</a><br>
+                        <a href="https://www.instagram.com/">Instagram</a><br>
+                        <a href="https://www.youtube.com/">Youtube</a><br>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Kunal Malik</p>
+        </div>
+    </div>
+
+    <script>
+
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
